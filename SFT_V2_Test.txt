@@ -1,0 +1,222 @@
+
+====================
+QUESTION:
+My internet connection itself is down. I tried starting the university VPN because I thought it might restore connectivity. Will that work?
+
+EXPECTED POINTS:
+['No', 'A working internet connection is required before the VPN tunnel can be established']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My internet connection itself is down. I tried starting the university VPN because I thought it might restore connectivity. Will that work?
+
+Assistant: If the VPN client repeatedly fails, the user should record the error message before contacting support. The user should check if the internet service is operational before assuming the VPN connection is good. This guidance applies to routine IT support requests. The university VPN provides remote access to selected internal services. If the VPN client repeatedly fails, the user should record the error message before contacting support. The user should disconnect and reconnect the VPN after changing their university password. This guidance applies to routine IT support requests.
+
+This guidance applies
+
+====================
+QUESTION:
+My normal internet works, but I changed my university password this morning and the VPN now rejects my login. What should I try?
+
+EXPECTED POINTS:
+['Disconnect and reconnect the VPN', 'Use the updated university credentials']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My normal internet works, but I changed my university password this morning and the VPN now rejects my login. What should I try?
+
+Assistant: If the VPN client repeatedly fails, the user should record the error message before contacting support. The user should check the university password and the VPN connection. If the VPN client is working but the connection is rejected, the user should verify the network and the university account. This guidance applies to routine IT support requests. The user should never send their password by email or chat. The user should disconnect and reconnect the VPN after changing their university password. The university IT service will support the user with the appropriate guidance
+
+====================
+QUESTION:
+The VPN client keeps failing and I am about to contact support. What information should I record first?
+
+EXPECTED POINTS:
+["Record the VPN client's error message"]
+
+MODEL:
+You are a university IT support assistant.
+
+User: The VPN client keeps failing and I am about to contact support. What information should I record first?
+
+Assistant: The user should record the error message before contacting support. This guidance applies to routine IT support requests. If the VPN client repeatedly fails, the user should record the error message before contacting support. The user should report suspicious activity to IT. This is a standard IT support guidance. The user should never use the university network for confidential communication. The user should never use the university network for personal data storage. The user should never use the university network for academic research. The user should never use the university network
+
+====================
+QUESTION:
+I submitted a print job at 4 PM yesterday and forgot to release it. It is 3 PM today. Should it normally still be available?
+
+EXPECTED POINTS:
+['Yes', 'Less than 24 hours have passed', 'Unreleased print jobs are retained for up to 24 hours']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I submitted a print job at 4 PM yesterday and forgot to release it. It is 3 PM today. Should it normally still be available?
+
+Assistant: The user should check the print job status. If the print job is still in progress, the user should release it before submitting another job. This guidance applies to routine IT support requests. The user should report the print job status to the IT Service Desk.
+
+This guidance applies to routine IT support requests. The user should release the print job before submitting another job. The user should check the print job status after submitting a new print job. If the print job is still in progress, the user should release
+
+====================
+QUESTION:
+I submitted a print job at 4 PM yesterday and it is now 5 PM today. I never released it. Should I expect it to still be there?
+
+EXPECTED POINTS:
+['No', 'More than 24 hours have passed', 'The unreleased job should have been automatically deleted', 'Submit the document again']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I submitted a print job at 4 PM yesterday and it is now 5 PM today. I never released it. Should I expect it to still be there?
+
+Assistant: The user should check the print job status after submitting the print job. If the print job is still pending, the user should wait until the printer reports a successful print job. This guidance applies to routine IT support requests. The user should report unresolved print jobs to the IT Service Desk.
+
+This guidance applies to routine IT support requests. The user should check the print job status after submitting the print job. If the print job is still pending, the user should wait until the printer reports a successful print job
+
+====================
+QUESTION:
+My friend is visiting campus and cannot use Campus-Secure. Should I give them my university username and password so they can connect?
+
+EXPECTED POINTS:
+['No', 'Do not share university credentials', 'The visitor should use Campus-Guest']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My friend is visiting campus and cannot use Campus-Secure. Should I give them my university username and password so they can connect?
+
+Assistant: The user should check their account status. Campus-Secure is the primary authentication method. If the user repeatedly fails, the IT Service Desk should record the error and contact support. This guidance applies to routine IT support requests. The user should never give away their university password. If Campus-Secure authentication fails, the user should choose another authentication method. The user should report suspicious activity. This is a standard IT support guidance. The user should never use Campus-Secure for internal university services. If the user
+
+====================
+QUESTION:
+I mistyped my password several times and my account became locked about six minutes ago. Should I keep trying to sign in?
+
+EXPECTED POINTS:
+['No', 'Wait until 15 minutes have passed before trying again']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I mistyped my password several times and my account became locked about six minutes ago. Should I keep trying to sign in?
+
+Assistant: If the account lock is still active, the user should contact the IT Service Desk. The user should check their account status after repeated sign-in attempts. This guidance applies to routine IT support requests. Users should never send their password by email or chat. The IT Service Desk will handle account lock recovery. 
+
+This guidance applies to routine IT support requests. Users should never send their password by email or chat. The IT Service Desk will handle account lock recovery. 
+
+The user should contact the IT Service Desk
+
+====================
+QUESTION:
+My account has remained locked for about 30 minutes after repeated failed logins. What should I do now?
+
+EXPECTED POINTS:
+['The normal 15-minute temporary lock period has passed', 'Contact the IT Service Desk']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My account has remained locked for about 30 minutes after repeated failed logins. What should I do now?
+
+Assistant: If the account has been locked for more than 30 minutes, the user should contact the IT Service Desk. The user should check their account status again after 15 minutes. This guidance applies to routine IT support requests. The user should never send their password by email or chat. If the account is locked, the user should contact the IT Service Desk. The user should never use the same password on two different accounts. This guidance applies to routine IT support requests. The user should never use
+
+====================
+QUESTION:
+I changed my university password, accidentally kept trying the old one until my account locked, and now I need the VPN. What order should I handle this in?
+
+EXPECTED POINTS:
+['Allow the 15-minute temporary account lock to expire', 'Then reconnect the VPN using the updated credentials', 'Contact the IT Service Desk if the account remains locked']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I changed my university password, accidentally kept trying the old one until my account locked, and now I need the VPN. What order should I handle this in?
+
+Assistant: The user should first check their university password. If the VPN client repeatedly fails, the user should record the error message before contacting support. This guidance applies to routine IT support requests. The user should never use the university password to sign in to the VPN. If the account lock is still active, the user should contact the IT Service Desk. The user should report the error message before contacting support. This guidance applies to routine IT support requests.
+
+This guidance applies to routine IT support requests. The user should
+
+====================
+QUESTION:
+I have a large research dataset containing sensitive university information. My personal cloud account has plenty of space. Is it suitable?
+
+EXPECTED POINTS:
+['No', 'Use approved university research storage', 'Sensitive university data should be stored only in approved university services']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I have a large research dataset containing sensitive university information. My personal cloud account has plenty of space. Is it suitable?
+
+Assistant: The user should check the cloud storage before sending large research datasets. Sensitive university information should not be stored in personal cloud accounts. Large research datasets should not be stored only on a single cloud service. This guidance applies to routine IT support requests. If the cloud storage is sufficient, the user should proceed with the upload. The user should never store sensitive university information in a personal cloud account. If the cloud storage is insufficient, the user should choose another cloud service. This guidance applies to routine IT support
+
+====================
+QUESTION:
+The only copy of my assignment is saved on a university laboratory computer. Is that enough?
+
+EXPECTED POINTS:
+['No', 'Important coursework should not be stored only on a local laboratory computer', 'Use approved university storage or another approved backup']
+
+MODEL:
+You are a university IT support assistant.
+
+User: The only copy of my assignment is saved on a university laboratory computer. Is that enough?
+
+Assistant: The user should check the university storage. If the lab computer is working but the assignment is not found, the user should try another cloud storage. This guidance applies to routine IT support requests. The user should report suspicious activity. If the lab computer is working but the assignment is not found, the user should try another cloud storage. The user should never store personal data on a university lab computer. This guidance applies to routine IT support requests. The user should never store personal data on a university lab computer
+
+====================
+QUESTION:
+I received an unexpected attachment that looks like it came from university IT. The message says to reply with my password if the attachment will not open. What should I do?
+
+EXPECTED POINTS:
+['Do not send the password', 'Do not open the attachment until the sender and message are verified', 'Use the university phishing-report mechanism if suspicious']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I received an unexpected attachment that looks like it came from university IT. The message says to reply with my password if the attachment will not open. What should I do?
+
+Assistant: If the attachment cannot be opened, leave the message for the IT Service Desk. The user should report the attachment using the university phishing-report mechanism. This guidance applies to routine IT support requests. The user should never open an attachment unless the sender and message are verified. If the attachment is encrypted, the user should use the university encryption tool. The user should disconnect the computer from the network and reconnect after testing the attachment. This guidance applies to routine IT support requests. The user should never open an attachment
+
+====================
+QUESTION:
+Campus-Secure is visible on my laptop, but authentication fails. The Wi-Fi service is known to be operational. What should I try on my device first?
+
+EXPECTED POINTS:
+['Forget Campus-Secure', 'Restart Wi-Fi', 'Reconnect using university credentials']
+
+MODEL:
+You are a university IT support assistant.
+
+User: Campus-Secure is visible on my laptop, but authentication fails. The Wi-Fi service is known to be operational. What should I try on my device first?
+
+Assistant: If Campus-Secure authentication fails, the user should check their account status. If Wi-Fi service is operational but authentication fails, the user should try another network. This guidance applies to routine IT support requests. Users should never send their password by email or chat. If Campus-Secure authentication fails, the user should try another network. The IT Service Desk will handle university IT support requests. This is the standard response to a user's authentication issue. The user should report suspicious activity to the IT Service Desk
+
+====================
+QUESTION:
+My print job is already waiting in the university print queue. What do I need to do at the printer to release it?
+
+EXPECTED POINTS:
+['Authenticate at the printer using the student card']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My print job is already waiting in the university print queue. What do I need to do at the printer to release it?
+
+Assistant: If the print job is already waiting, the user should check the printer status. The user should release the print job and wait for the printer to release it. This guidance applies to routine IT support requests. Users should report suspicious activity using the university phishing-report mechanism. Print jobs are submitted to the university print queue. The user should release the print job before the printer releases it. This guidance applies to routine IT support requests. Users should report suspicious activity using the university phishing-report mechanism. Print jobs are
+
+====================
+QUESTION:
+What exact phone number should I call for the university IT Service Desk?
+
+EXPECTED POINTS:
+['Do not invent a phone number', 'State that the exact phone number is not available from the learned guidance']
+
+MODEL:
+You are a university IT support assistant.
+
+User: What exact phone number should I call for the university IT Service Desk?
+
+Assistant: The user should call the university IT Service Desk. If the phone call is not answered, the user should check the phone number. This guidance applies to routine IT support requests. The user should report suspicious activity using the university phishing-report mechanism. If the user cannot find the IT Service Desk, the user should contact the IT Service Desk again. The user should never call a friend's phone until they have verified the call. This guidance applies to routine IT support requests. The user should never call a friend

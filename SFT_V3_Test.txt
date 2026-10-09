@@ -1,0 +1,236 @@
+
+====================
+QUESTION:
+My internet connection itself is down. I tried starting the university VPN because I thought it might restore connectivity. Will that work?
+
+EXPECTED POINTS:
+['No', 'A working internet connection is required before the VPN tunnel can be established']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My internet connection itself is down. I tried starting the university VPN because I thought it might restore connectivity. Will that work?
+
+Assistant: The available university data center internet should be the primary source of internet access. If the VPN client repeatedly fails, the user should record the error message before contacting support. This guidance applies to routine IT support requests. Users should disconnect and reconnect the VPN client using the updated university VPN interface after changing their university password.
+
+If the VPN client repeatedly fails, the user should record the error message before contacting support. The available university data center internet should be the primary source of internet access. This guidance applies to routine
+
+====================
+QUESTION:
+My normal internet works, but I changed my university password this morning and the VPN now rejects my login. What should I try?
+
+EXPECTED POINTS:
+['Disconnect and reconnect the VPN', 'Use the updated university credentials']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My normal internet works, but I changed my university password this morning and the VPN now rejects my login. What should I try?
+
+Assistant: Disconnect and reconnect the VPN using the updated university credentials. If the VPN client repeatedly fails, contact the IT Service Desk. This guidance applies to routine university IT support requests. Users should use the approved university VPN certificate to authenticate to the university network. If the VPN client repeatedly fails, forget the certificate, reconnect, and submit the updated credentials. The IT Service Desk will verify authentication to the VPN before releasing access to the university network. 
+
+This is a sample response. The actual response may vary. 
+
+
+
+====================
+QUESTION:
+The VPN client keeps failing and I am about to contact support. What information should I record first?
+
+EXPECTED POINTS:
+["Record the VPN client's error message"]
+
+MODEL:
+You are a university IT support assistant.
+
+User: The VPN client keeps failing and I am about to contact support. What information should I record first?
+
+Assistant: Record the VPN client's error message before contacting support. If the VPN client repeatedly fails, record the error message and send it to the IT Service Desk. A working internet connection is required before the VPN tunnel can be established. This guidance applies to routine university IT support requests. Users should disconnect and reconnect the VPN tunnel using the updated university VPN client after changing their university password. 
+
+The available university IT support options include the following. If the VPN client repeatedly fails, the user should record the error message
+
+====================
+QUESTION:
+I submitted a print job at 4 PM yesterday and forgot to release it. It is 3 PM today. Should it normally still be available?
+
+EXPECTED POINTS:
+['Yes', 'Less than 24 hours have passed', 'Unreleased print jobs are retained for up to 24 hours']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I submitted a print job at 4 PM yesterday and forgot to release it. It is 3 PM today. Should it normally still be available?
+
+Assistant: The available-correct message indicates that the print job was submitted at 4 PM yesterday and is still being processed. The available-correct message does not provide the status of the print job. If the print job is still in progress, the available-correct message should be checked before releasing the job. This guidance applies to routine IT support requests. Users should check the available-correct message after releasing the print job at the printer. A working internet connection is required before the print job can be submitted.
+
+====================
+QUESTION:
+I submitted a print job at 4 PM yesterday and it is now 5 PM today. I never released it. Should I expect it to still be there?
+
+EXPECTED POINTS:
+['No', 'More than 24 hours have passed', 'The unreleased job should have been automatically deleted', 'Submit the document again']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I submitted a print job at 4 PM yesterday and it is now 5 PM today. I never released it. Should I expect it to still be there?
+
+Assistant: Print jobs are submitted to the university print queue. Unreleased print jobs are retained for up to 24 hours and are then automatically deleted. If the print job fails, try again later. This guidance applies to routine IT support requests. Users should check the university print queue after retrieving their university card. 
+
+This guidance applies to routine IT support requests. The available university credit is used only toward approved print jobs. A released print job is retained for up to 24 hours and is then automatically
+
+====================
+QUESTION:
+My friend is visiting campus and cannot use Campus-Secure. Should I give them my university username and password so they can connect?
+
+EXPECTED POINTS:
+['No', 'Do not share university credentials', 'The visitor should use Campus-Guest']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My friend is visiting campus and cannot use Campus-Secure. Should I give them my university username and password so they can connect?
+
+Assistant: Disconnect and reconnect using the updated Campus-Secure credentials. If the authentication provider does not work, try another authentication method. This guidance applies to routine IT support requests. Users should never share their university username and password with a third party. If Campus-Secure authentication fails, forget the authenticator, restart the authentication process, and record the forgotten password in the IT Service Desk. 
+
+This is the correct procedure for handling a temporarily locked Campus-Secure account. The available university services are listed in the IT
+
+====================
+QUESTION:
+I mistyped my password several times and my account became locked about six minutes ago. Should I keep trying to sign in?
+
+EXPECTED POINTS:
+['No', 'Wait until 15 minutes have passed before trying again']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I mistyped my password several times and my account became locked about six minutes ago. Should I keep trying to sign in?
+
+Assistant: If after multiple failed sign-in attempts the account remains locked, the user should contact the IT Service Desk. A temporarily locked account should be left for 15 minutes before another sign-in attempt. This guidance applies to routine IT support requests. Users should never share their password with a third party. The available university credit card information should be used only for approved university services. If the account remains locked, the user should contact the IT Service Desk. This is the standard response to a temporarily locked account.
+
+====================
+QUESTION:
+My account has remained locked for about 30 minutes after repeated failed logins. What should I do now?
+
+EXPECTED POINTS:
+['The normal 15-minute temporary lock period has passed', 'Contact the IT Service Desk']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My account has remained locked for about 30 minutes after repeated failed logins. What should I do now?
+
+Assistant: If the account has been locked for 15 minutes and the authentication process fails again, forget the credentials, restart the authentication flow, and try again. If the account remains locked after the 15-minute temporary lock period, contact the IT Service Desk. This guidance applies to routine university IT support requests. Users should never share their university password with a third party. A temporarily locked account should be left for 15 minutes before trying again. This is the standard procedure for temporarily locked accounts.
+
+====================
+QUESTION:
+I changed my university password, accidentally kept trying the old one until my account locked, and now I need the VPN. What order should I handle this in?
+
+EXPECTED POINTS:
+['Allow the 15-minute temporary account lock to expire', 'Then reconnect the VPN using the updated credentials', 'Contact the IT Service Desk if the account remains locked']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I changed my university password, accidentally kept trying the old one until my account locked, and now I need the VPN. What order should I handle this in?
+
+Assistant: Disconnect and reconnect the VPN using the updated university credentials. If the VPN client repeatedly fails, record the error message before contacting support. This guidance applies to routine university IT support requests. If the VPN client repeatedly fails, the user should record the error message before contacting support. The available university credentials should be used only for approved university services. Users should disconnect and reconnect the VPN using the updated university credentials. 
+
+After repeated failed sign-in attempts, the account may be temporarily locked. If the VPN client repeatedly
+
+====================
+QUESTION:
+I have a large research dataset containing sensitive university information. My personal cloud account has plenty of space. Is it suitable?
+
+EXPECTED POINTS:
+['No', 'Use approved university research storage', 'Sensitive university data should be stored only in approved university services']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I have a large research dataset containing sensitive university information. My personal cloud account has plenty of space. Is it suitable?
+
+Assistant: Sensitive university data should be stored only in approved university services. This guidance applies to routine IT support requests. Sensitive university data should be stored only in approved university services. If the cloud account remains locked, contact the IT Service Desk. Users should disconnect and reconnect the university cloud account using the updated university credentials. Large research datasets should use approved research storage rather than personal cloud folders. This is a general guidance note. 
+
+After repeated failed sign-in attempts, the IT Service Desk may temporarily lock the
+
+====================
+QUESTION:
+The only copy of my assignment is saved on a university laboratory computer. Is that enough?
+
+EXPECTED POINTS:
+['No', 'Important coursework should not be stored only on a local laboratory computer', 'Use approved university storage or another approved backup']
+
+MODEL:
+You are a university IT support assistant.
+
+User: The only copy of my assignment is saved on a university laboratory computer. Is that enough?
+
+Assistant: The available university laboratory computer cloud folder contains the latest approved university coursework. If the laboratory computer remains locked, contact the IT Service Desk. This guidance applies to routine IT support requests. Users should disconnect and reconnect the laboratory computer if the authentication provider fails repeatedly. 
+
+This scenario suggests that the only available university laboratory computer cloud folder contains the latest approved university coursework. If the laboratory computer remains locked, the user should contact the IT Service Desk. The available university laboratory computer cloud folder is the primary backup for coursework
+
+====================
+QUESTION:
+I received an unexpected attachment that looks like it came from university IT. The message says to reply with my password if the attachment will not open. What should I do?
+
+EXPECTED POINTS:
+['Do not send the password', 'Do not open the attachment until the sender and message are verified', 'Use the university phishing-report mechanism if suspicious']
+
+MODEL:
+You are a university IT support assistant.
+
+User: I received an unexpected attachment that looks like it came from university IT. The message says to reply with my password if the attachment will not open. What should I do?
+
+Assistant: The available university IT support records should be verified before trusting an attachment or link. If the attachment does not open, leave it for the IT support team. This guidance applies to routine university IT support requests. Users should use the university phishing-report mechanism if they believe the attachment is malicious. A working internet connection is required before the university authentication process can proceed. This is the standard response to a user who has received an unexpected attachment. If the attachment is encrypted, the user should use the same university encrypted
+
+====================
+QUESTION:
+Campus-Secure is visible on my laptop, but authentication fails. The Wi-Fi service is known to be operational. What should I try on my device first?
+
+EXPECTED POINTS:
+['Forget Campus-Secure', 'Restart Wi-Fi', 'Reconnect using university credentials']
+
+MODEL:
+You are a university IT support assistant.
+
+User: Campus-Secure is visible on my laptop, but authentication fails. The Wi-Fi service is known to be operational. What should I try on my device first?
+
+Assistant: If Campus-Secure authentication fails, forget the authenticator message, restart the authentication process, and try again. If the university account remains locked, contact the IT Service Desk. This guidance applies to routine university IT support requests. Users should disconnect and reconnect to Campus-Secure using the updated university authentication tool. If the Wi-Fi service is operational but authentication fails, check your account status before proceeding. The available university services are Campus-Secure and other approved university tools. This is the standard guidance for university
+
+====================
+QUESTION:
+My print job is already waiting in the university print queue. What do I need to do at the printer to release it?
+
+EXPECTED POINTS:
+['Authenticate at the printer using the student card']
+
+MODEL:
+You are a university IT support assistant.
+
+User: My print job is already waiting in the university print queue. What do I need to do at the printer to release it?
+
+Assistant: Release the print job using the printer's release button. If the print job is still waiting, check the printer's fault report. This guidance applies to routine IT support requests. If the printer reports a hardware fault, choose another printer and try again. The available university print queues should be used for approved university print jobs. Users should disconnect and reconnect the printer after updating the university password. 
+
+This is the correct response to the user's question. The available university print queues should be used for approved university
+
+====================
+QUESTION:
+What exact phone number should I call for the university IT Service Desk?
+
+EXPECTED POINTS:
+['Do not invent a phone number', 'State that the exact phone number is not available from the learned guidance']
+
+MODEL:
+You are a university IT support assistant.
+
+User: What exact phone number should I call for the university IT Service Desk?
+
+Assistant: The available university IT Service Desk records provide general guidance. If the authentication fails, forget the credentials, restart the authentication prompt, and try again. This guidance applies to routine university IT support requests. Users should contact the appropriate university service desk for specific assistance. 
+
+This is a sample response. The actual response may vary. 
+
+After 15 minutes of repeated failed sign-in attempts, the IT Service Desk will record the username and password for future reference. 
+
+Unexpected attachments should not be opened until the
