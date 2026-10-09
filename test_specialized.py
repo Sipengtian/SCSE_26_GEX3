@@ -1,6 +1,5 @@
 import torch
 import json
-import os
 
 from transformers import (
     AutoTokenizer
@@ -12,10 +11,7 @@ from peft import (
 
 
 MODEL_PATH = (
-    os.environ.get(
-        "MODEL_PATH",
-        "models/specialized_adapter"
-    )
+    "models/specialized_adapter"
 )
 
 
@@ -35,14 +31,6 @@ tokenizer = (
 
 
 model.eval()
-
-device = (
-    "cuda"
-    if torch.cuda.is_available()
-    else "cpu"
-)
-
-model.to(device)
 
 
 with open(
@@ -72,11 +60,6 @@ for test in tests:
         prompt,
         return_tensors="pt"
     )
-
-    inputs = {
-        key: value.to(device)
-        for key, value in inputs.items()
-    }
 
 
     with torch.no_grad():

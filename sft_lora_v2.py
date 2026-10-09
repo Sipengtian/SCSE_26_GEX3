@@ -1,7 +1,7 @@
 from datasets import load_dataset
 from transformers import AutoTokenizer
 from peft import AutoPeftModelForCausalLM
-from trl import SFTTrainer, SFTConfig, DataCollatorForCompletionOnlyLM
+from trl import SFTTrainer, SFTConfig
 
 MODEL_PATH = "models/domain_adapter"
 
@@ -47,23 +47,20 @@ config = SFTConfig(
     logging_steps=10,
     eval_strategy="epoch",
     save_strategy="epoch",
-    max_seq_length=256,
+    max_length=256,
     dataset_text_field="text", # Explicitly tell SFTConfig where your text is
+    completion_only_loss=True, 
     report_to="none",
-)
-
-collator = DataCollatorForCompletionOnlyLM(
-    response_template="Assistant:",
-    tokenizer=tokenizer
 )
 
 trainer = SFTTrainer(
     model=model,
     args=config,
-    data_collator=collator,
     train_dataset=data["train"],
     eval_dataset=data["validation"],
-    tokenizer=tokenizer,
+    processing_class=tokenizer,
+    # Note: TRL's SFTConfig with completion_only_loss=True automatically configures
+    # the DataCollatorForCompletionOnlyLM parsing under the hood using standard formatting templates.
 )
 
 trainer.train()

@@ -10,8 +10,7 @@ from peft import (
 
 from trl import (
     SFTTrainer,
-    SFTConfig,
-    DataCollatorForCompletionOnlyLM
+    SFTConfig
 )
 
 import random
@@ -70,22 +69,21 @@ dataset = dataset.train_test_split(
 def format_example(example):
 
     return {
-        "text": (
+        "prompt": (
             "You are a university IT "
             "support assistant.\n\n"
             "User: "
             + example["prompt"]
             + "\n\nAssistant:"
-            + " "
-            + example["completion"]
-        )
+        ),
+
+        "completion":
+            " " + example["completion"]
     }
 
 
 dataset = dataset.map(
-    format_example,
-    remove_columns=
-        dataset["train"].column_names
+    format_example
 )
 
 
@@ -103,17 +101,11 @@ config = SFTConfig(
     logging_steps=20,
     eval_strategy="epoch",
     save_strategy="epoch",
-    max_seq_length=256,
-    dataset_text_field="text",
+    max_length=256,
+    completion_only_loss=True,
     use_liger_kernel=False,
     report_to="none",
     seed=SEED
-)
-
-
-collator = DataCollatorForCompletionOnlyLM(
-    response_template="Assistant:",
-    tokenizer=tokenizer
 )
 
 
@@ -124,12 +116,11 @@ collator = DataCollatorForCompletionOnlyLM(
 trainer = SFTTrainer(
     model=model,
     args=config,
-    data_collator=collator,
     train_dataset=
         dataset["train"],
     eval_dataset=
         dataset["test"],
-    tokenizer=tokenizer
+    processing_class=tokenizer
 )
 
 
